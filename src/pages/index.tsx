@@ -37,7 +37,17 @@ const IndexPage: NextPage<IndexPageProps> = ({ initialCatImageUrl }) => {
   
   return (
     <div>
-      <button onClick={handleClick}>Cat of the day🐱</button>
+      <button
+        onClick={handleClick}
+        style={{
+          backgroundColor: 'rgb(120,120,120)',
+          color: 'white',
+          border: 'none',
+          borderRadius: '0.4rem',
+          padding: '4px 4px', 
+        }}>
+        Cat of the day🐱
+      </button>
       <div style={{ marginTop: 8 }}>
         <img style={{ width: '100%' }} src={catImageUrl} />
       </div>
